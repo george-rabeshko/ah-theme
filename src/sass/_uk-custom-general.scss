@@ -1,0 +1,41 @@
+.uk-navbar {
+    background: none;
+    border: none;
+}
+
+.uk-navbar-nav > li > a {
+    border: none !important;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    text-shadow: none;
+}
+
+.uk-navbar-nav > li.uk-open > a,
+.uk-navbar-nav > li:hover > a,
+.uk-navbar-nav > li > a:focus {
+    border: none;
+    background: none;
+    color: #f9a124;
+}
+
+.top-detail-menu {
+    .uk-navbar {
+        background-color: #f1f1f1;
+    }
+
+    .uk-navbar-nav > li > a {
+        height: 60px;
+        font-size: 17px;
+        line-height: 60px;
+        padding: 0 30px;
+    }
+
+    .active {
+        background-color: #f37812;
+
+        & > a {
+            color: #fff !important;
+        }
+    }
+}

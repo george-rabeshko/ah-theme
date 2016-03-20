@@ -1,0 +1,112 @@
+@import "settings";
+@import "common";
+@import "media";
+@import "uk-custom";
+@import "uk-custom-front-page";
+
+.welcome {
+    background: url(../images/welcome-bg.jpg) top center;
+
+    .logo {
+        margin: 125px auto 90px;
+    }
+
+    @media (max-width: 767px) {
+        .welcome .logo {
+            margin: 50px auto 25px !important;
+        }
+    }
+}
+
+.panel-box {
+    @extend .animation;
+    background: none;
+    outline: #e5e5e5;
+    margin-top: 85px;
+    padding-bottom: 35px;
+    padding-top: 90px;
+
+
+    &:hover {
+        border-bottom: 1px solid #f37812;
+
+        .uk-panel-title { color: #f37812; }
+        .panel-box-icon { background-color: #f37812; }
+    }
+
+    * { @extend .animation; }
+
+    .panel-box-icon { background-color: #f99a4c; }
+}
+
+.panel-box-icon {
+    border-radius: 50% !important;
+    height: 125px;
+    left: 50%;
+    margin-left: -62.5px;
+    margin-top: -155px;
+    position: absolute;
+    width: 125px;
+
+    & > img {
+        margin-top: 45px;
+    }
+}
+
+.record {
+    @extend .animation;
+    margin-top: 20px;
+
+    h3 {
+        text-transform: none;
+
+        a {
+            @extend .animation;
+            color: #433e3b;
+
+            &:hover {
+                color: #f37812;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &:hover {
+        img { opacity: 0.9; }
+    }
+}
+
+.video-caption {
+    background-color: rgba(0,0,0,0.45);
+}
+
+.video-play {
+    @extend .animation;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: "OpenSans-Bold", sans-serif;
+    margin: 60px auto;
+    padding: 10px 50px;
+
+    &:hover {
+        background-color: #fff;
+        border-color: #fff;
+    }
+}
+
+// common media properties
+@media (max-width: 767px) {
+    .video-play {
+        margin: 10px auto;
+    }
+}
+
+// additional
+.top-menu {
+    background-color: rgba(0,0,0,0.45);
+}
+
+body > div:not(:first-of-type) {
+    margin: 125px auto !important;
+}

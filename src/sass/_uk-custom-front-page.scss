@@ -1,0 +1,20 @@
+.uk-navbar {
+    background: none;
+}
+
+.uk-navbar-nav > li > a {
+    border: none !important;
+    color: #fff;
+    font-size: 16px;
+    height: 80px;
+    line-height: 80px;
+    text-shadow: none;
+}
+
+.uk-navbar-nav > li.uk-open > a,
+.uk-navbar-nav > li:hover > a,
+.uk-navbar-nav > li > a:focus {
+    border: none;
+    background: none;
+    color: #f9a124;
+}

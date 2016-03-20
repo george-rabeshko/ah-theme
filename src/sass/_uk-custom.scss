@@ -1,0 +1,31 @@
+.uk-button {
+    text-shadow: none;
+}
+
+[data-uk-cover] {
+    left: 0;
+    transform: translate(0%, 0%);
+}
+
+.uk-panel-title {
+    font-size: 24px;
+}
+
+.uk-form input, .uk-form textarea {
+    background-color: transparent !important;
+    padding-left: 12px !important;
+}
+
+.uk-form input[type="submit"] {
+    @extend .animation;
+    background-color: #b67138 !important;
+    border: none;
+    color: #fff;
+    font-family: "OpenSans-Bold", sans-serif;
+    padding: 8px 30px !important;
+    text-align: center;
+
+    &:hover {
+        background-color: #9E4B06 !important;
+    }
+}

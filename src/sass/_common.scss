@@ -1,0 +1,205 @@
+/* Fonts import
+ *
+ * Including necessary text fonts:
+ * - OpenSans - text and smaller headlines
+ * - Montserrat - large headlines
+ */
+
+// OpenSans
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url(../../src/fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url(../../src/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(../../src/fonts/OpenSans-Bold.ttf);
+}
+
+// Montserrat
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../../src/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(../../src/fonts/Montserrat-Bold.ttf);
+}
+
+
+/* General markup
+ *
+ * Initial properties for tags visualisation:
+ * - common (for all types of tags)
+ * - headlines
+ */
+
+// common
+body {
+    color: #433e3b !important;
+    font-size: 16px;
+    font-family: "OpenSans-Regular", sans-serif;
+    line-height: 24px;
+
+    * {
+        border-radius: 0 !important;
+    }
+}
+
+// headlines
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat-Bold", sans-serif;
+    text-transform: uppercase;
+} // !warning: multiple rows
+
+h1 {
+    font-size: 72px;
+    line-height: 72px;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 55px;
+    margin-bottom: 20px !important;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+
+/* Utility
+ *
+ * Useful properties and separate classes for special oftentimes used elements
+ */
+
+.animation {
+    transition: .15s ease-in-out;
+    -moz-transition: .15s ease-in-out;
+    -webkit-transition: .15s ease-in-out;
+}
+
+.button-border {
+    @extend .animation;
+    background-color: #fff;
+    border: 2px solid #f99a4c;
+    color: #f99a4c;
+    font-family: "OpenSans-Bold", sans-serif;
+    padding: 10px 50px;
+
+    &:hover {
+        background-color: #f37812;
+        border-color: #f37812;
+        color: #fff;
+    }
+}
+
+.cover-headline {
+    color: #fff;
+    margin: 0;
+}
+
+.cover-description {
+    color: #fff;
+    font-size: 17px;
+    margin: 20px auto;
+}
+
+.cover-button {
+    @extend .animation;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Montserrat-Bold", sans-serif;
+    margin: 40px auto 60px !important;
+    padding: 10px 75px;
+    text-transform: uppercase;
+
+    &:hover, &:active, &:focus {
+        background-color: #f37812;
+        border-color: #f37812;
+        color: #fff;
+    }
+}
+
+.headline-thin {
+    font-family: "OpenSans-Light", sans-serif;
+}
+
+.empty-separator {
+    margin-top: 25px;
+}
+
+.small-margin-bottom-group > p {
+    margin: 5px 0;
+}
+
+.small-logo {
+    margin-bottom: 20px;
+}
+
+
+/* Modules
+ *
+ * Individual parts of the site:
+ * - header (not home)
+ * - sidebar
+ * - content
+ * - footer
+ * - other
+ */
+
+// footer
+.copyright {
+    background-color: #433e3b;
+    color: #fff;
+    font-size: 14px;
+    padding: 25px 0;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    margin-bottom: 0 !important;
+
+    hr {
+        margin-top: 35px;
+    }
+}
+
+.footer-detail {
+    margin-bottom: 0 !important;
+    padding-bottom: 35px;
+    padding-top: 75px;
+}
+
+.short-form {
+    margin-top: 25px;
+
+    h5 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        text-transform: none;
+    }
+}
+
+.social a {
+    @extend .animation;
+    background-color: #fff;
+    border: none;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+
+    &:hover {
+        background-color: #f37812;
+        color: #fff;
+    }
+}

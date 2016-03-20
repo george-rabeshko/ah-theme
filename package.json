@@ -1,0 +1,39 @@
+{
+  "name": "ah-theme",
+  "version": "1.0.0",
+  "description": "frontend theme for amber house",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/george-rabeshko/ah-theme.git"
+  },
+  "keywords": [
+    "ah"
+  ],
+  "author": "George Rabeshko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/george-rabeshko/ah-theme.git"
+  },
+  "homepage": "https://github.com/george-rabeshko/ah-theme.git",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "connect": "^3.4.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-csso": "^1.0.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-uglify": "^1.5.1",
+    "gulp-uncss": "^1.0.4",
+    "gulp-useref": "^3.0.5",
+    "imagemin-jpegtran": "^4.3.2",
+    "imagemin-pngquant": "^4.2.1",
+    "wiredep": "^3.0.0"
+  }
+}

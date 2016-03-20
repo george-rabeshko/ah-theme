@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Home page</title>
+
+    <!-- build:css css/vendor.min.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../src/bower/normalize-css/normalize.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="../src/css/uikit.almost-flat.min.css">
+    <!-- endbuild -->
+
+    <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" href="css/front-page.css">
+    <!-- endbuild -->
+</head>
+<body>
+    <!-- BEGIN: welcome -->
+    <div class="welcome" data-uk-parallax="{bg: '-200'}">
+        <div class="top-menu">
+            <div class="uk-container uk-container-center">
+                <div class="uk-grid">
+                    <div class="uk-width-1-1">
+                        <nav class="uk-navbar">
+                            <ul class="uk-navbar-nav uk-visible-small">
+                                <li><a class="uk-navbar-toggle" data-uk-offcanvas="{target:'#navigation'}"></a></li>
+                            </ul>
+
+                            <ul class="uk-navbar-nav uk-hidden-small">
+                                <li class="uk-parent" data-uk-dropdown>
+                                    <a href="">Language <i class="uk-icon-caret-down"></i></a>
+
+                                    <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-small">
+                                        <ul class="uk-nav uk-nav-navbar">
+                                            <li><a href=""><i class="uk-icon-flag"></i> - English</a></li>
+                                            <li><a href=""><i class="uk-icon-flag"></i> - Ukrainian</a></li>
+                                            <li><a href=""><i class="uk-icon-flag"></i> - Russian</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="uk-parent" data-uk-dropdown>
+                                    <a href="">Currency <i class="uk-icon-caret-down"></i></a>
+
+                                    <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-small">
+                                        <ul class="uk-nav uk-nav-navbar">
+                                            <li><a href=""><i class="uk-icon-usd"></i> - USD</a></li>
+                                            <li><a href=""><i class="uk-icon-eur"></i> - EUR</a></li>
+                                            <li><a href=""><i class="uk-icon-yen"></i> - UAH</a></li>
+                                            <li><a href=""><i class="uk-icon-rub"></i> - RUB</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="uk-navbar-nav uk-navbar-flip uk-hidden-small">
+                                <li><a href="">About</a></li>
+                                <li><a href="">Delivery</a></li>
+                                <li><a href="">Contacts</a></li>
+
+                                <li><a href="#log-in" data-uk-modal>Log in <i class="uk-icon-sign-in"></i></a></li>
+                            </ul>
+                        </nav>
+
+                        <div id="navigation" class="uk-offcanvas">
+                            <div class="uk-offcanvas-bar">
+                                <ul class="uk-nav uk-nav-parent-icon" data-uk-nav>
+                                    <li class="uk-nav-header">Pages</li>
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">Gallery</a></li>
+                                    <li><a href="">About</a></li>
+                                    <li><a href="">Delivery</a></li>
+                                    <li><a href="">Contacts</a></li>
+                                    <li><a href="#log-in" data-uk-modal>Log in</a></li>
+
+                                    <li class="uk-nav-divider"></li>
+
+                                    <li class="uk-nav-header">Auxiliary</li>
+                                    <li class="uk-parent">
+                                        <a href="#">Language</a>
+                                        <ul class="uk-nav-sub">
+                                            <li><a href="#">English</a></li>
+                                            <li><a href="#">Ukrainian</a></li>
+                                            <li><a href="#">Russian</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="uk-parent">
+                                        <a href="#">Currency</a>
+                                        <ul class="uk-nav-sub">
+                                            <li><a href="#">USD</a></li>
+                                            <li><a href="#">EUR</a></li>
+                                            <li><a href="#">UAH</a></li>
+                                            <li><a href="#">RUB</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="log-in" class="uk-modal">
+                            <div class="uk-modal-dialog">
+                                <a class="uk-modal-close uk-close"></a>
+
+                                <div class="detail-form">
+                                    <form action="" class="uk-form">
+                                        <fieldset data-uk-margin>
+                                            <legend>Log in</legend>
+
+                                            <input type="email" placeholder="Email">
+                                            <input type="password" placeholder="Password">
+                                            <input type="submit" value="Send">
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-container uk-container-center uk-text-center">
+            <div class="uk-grid">
+                <div class="uk-width-1-1">
+                    <a href="/"><img src="images/lg-logo.png" class="logo" alt="lg-logo"></a>
+
+                    <h1 class="cover-headline uk-hidden-small">Welcome to Amber House</h1>
+
+                    <div class="uk-grid">
+                        <div class="uk-width-1-10"></div>
+                        <div class="uk-width-8-10">
+                            <p class="cover-description">A rampy Flat UI Kit that you can download for free. This kit consists of various widgets: calendar, profile, login, contact, gallery, video, article and map. I made two versions of color, orange and blue.</p>
+                        </div>
+                    </div>
+
+                    <a href="" class="uk-button cover-button">Gallery</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: welcome -->
+
+    <!-- BEGIN: advantages -->
+    <div class="advantages">
+        <div class="uk-container uk-container-center">
+            <div class="uk-grid uk-grid-match" data-uk-grid-match="{target:'.uk-panel'}">
+                <div class="uk-width-1-1">
+                    <h2 class="uk-text-center">Why choose us?</h2>
+                </div>
+
+                <div class="uk-width-small-1-1 uk-width-medium-1-3">
+                    <div class="uk-panel uk-panel-box panel-box uk-text-center">
+                        <div class="panel-box-icon"><img src="images/delivery.png" alt=""></div>
+                        <h4 class="uk-panel-title headline-thin">Inner headline</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis maximus tincidunt. Pellentesque pellentesque odio risus, quis finibus nisi hendrerit sit amet. Donec tempus mi id ante aliquet, at elementum tortor bibendum. Integer non odio justo.</p>
+                    </div>
+                </div>
+
+                <div class="uk-width-small-1-1 uk-width-medium-1-3">
+                    <div class="uk-panel uk-panel-box panel-box uk-text-center">
+                        <div class="panel-box-icon"><img src="images/money.png" alt=""></div>
+                        <h4 class="uk-panel-title headline-thin">Inner headline</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis maximus tincidunt. Pellentesque pellentesque odio risus, quis finibus nisi hendrerit sit amet. Donec tempus mi id ante aliquet, at elementum tortor bibendum. Integer non odio justo.</p>
+                    </div>
+                </div>
+
+                <div class="uk-width-small-1-1 uk-width-medium-1-3">
+                    <div class="uk-panel uk-panel-box panel-box uk-text-center">
+                        <div class="panel-box-icon"><img src="images/payment.png" alt=""></div>
+                        <h4 class="uk-panel-title headline-thin">Inner headline</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis maximus tincidunt. Pellentesque pellentesque odio risus, quis finibus nisi hendrerit sit amet. Donec tempus mi id ante aliquet, at elementum tortor bibendum. Integer non odio justo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: advantages -->
+
+    <!-- BEGIN: records -->
+    <div class="records">
+        <div class="uk-container uk-container-center">
+            <div class="uk-grid">
+                <div class="uk-width-1-1">
+                    <h2 class="uk-text-center">Main information</h2>
+                </div>
+
+                <div class="uk-width-small-1-1 uk-width-medium-1-2">
+                    <div class="record">
+                        <h3 class="headline-thin"><a href="#">Inner headline</a></h3>
+                        <img src="images/record.png" class="uk-responsive-width" alt="">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                        <a href="#" class="uk-button button-border">Read more</a>
+                    </div>
+                </div>
+
+                <div class="empty-separator uk-visible-small"></div>
+
+                <div class="uk-width-small-1-1 uk-width-medium-1-2">
+                    <div class="record">
+                        <h3 class="headline-thin"><a href="#">Inner headline</a></h3>
+                        <img src="images/record.png" class="uk-responsive-width" alt="">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                        <a href="#" class="uk-button button-border">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: records -->
+
+    <!-- BEGIN: video -->
+    <div class="video uk-cover-background uk-position-relative">
+        <iframe data-uk-cover src="https://www.youtube.com/embed/yba1E62LZMQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+        <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle video-caption">
+            <div class="uk-container uk-container-center">
+                <div class="uk-grid">
+                    <div class="uk-width-1-1 uk-text-center">
+                        <h2 class="cover-headline uk-text-center">How we work</h2>
+
+                        <div class="uk-grid">
+                            <div class="uk-width-1-10"></div>
+
+                            <div class="uk-width-8-10">
+                                <p class="uk-hidden-small cover-description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden.</p>
+                            </div>
+                        </div>
+
+                        <button class="uk-button video-play">View a video</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: video -->
+
+    <!-- BEGIN: footer -->
+    <div class="footer">
+        <div class="uk-container uk-container-center footer-detail">
+            <div class="uk-grid">
+                <div class="uk-width-small-1-1 uk-width-medium-1-3">
+                    <img src="images/sm-logo.png" class="small-logo" alt="">
+
+                    <div class="small-margin-bottom-group">
+                        <p><strong>Email</strong> : hello123@gmail.com</p>
+                        <p><strong>Phone</strong> : 0123 456 789</p>
+                        <p><strong>Add</strong> : 2809 Lincoln st, Califonia, USA</p>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+                    <div class="social">
+                        <a href="" class="uk-button"><i class="uk-icon-facebook"></i></a>
+                        <a href="" class="uk-button"><i class="uk-icon-twitter"></i></a>
+                        <a href="" class="uk-button"><i class="uk-icon-vk"></i></a>
+                        <a href="" class="uk-button"><i class="uk-icon-google"></i></a>
+                    </div>
+
+                    <div class="short-form">
+                        <h5>Newsletter:</h5>
+                        <form action="" class="uk-form">
+                            <fieldset data-uk-margin>
+                                <input type="text" placeholder="Email Adress" class="uk-form-large uk-form-width-medium">
+                                <input type="submit" value="Send">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="uk-width-small-1-1 uk-width-medium-1-3">
+                    <hr class="uk-visible-small">
+                    <h3>Popular items</h3>
+
+                    <div class="uk-grid">
+                        <div class="uk-width-1-3">
+                            1
+                        </div>
+
+                        <div class="uk-width-1-3">
+                            2
+                        </div>
+
+                        <div class="uk-width-1-3">
+                            3
+                        </div><!-- /f-row -->
+
+                        <div class="uk-width-1-3">
+                            1
+                        </div>
+
+                        <div class="uk-width-1-3">
+                            2
+                        </div>
+
+                        <div class="uk-width-1-3">
+                            3
+                        </div><!-- /s-row -->
+
+                        <div class="uk-width-1-3">
+                            1
+                        </div>
+
+                        <div class="uk-width-1-3">
+                            2
+                        </div>
+
+                        <div class="uk-width-1-3">
+                            3
+                        </div><!-- /t-row -->
+                    </div>
+                </div>
+
+                <div class="uk-width-small-1-1 uk-width-medium-1-3">
+                    <hr class="uk-visible-small">
+                    <h3>Quick contact us</h3>
+
+                    <div class="detail-form">
+                        <form action="" class="uk-form">
+                            <fieldset data-uk-margin>
+                                <input type="text" placeholder="Name" class="uk-form-large uk-width-1-1">
+                                <input type="email" placeholder="Email" class="uk-form-large uk-width-1-1">
+                                <input type="text" placeholder="Phone Number" class="uk-form-large uk-width-1-1">
+
+                                <textarea name="message" cols="30" rows="5" placeholder="Message" class="uk-form-large  uk-width-1-1"></textarea>
+
+                                <input type="submit" value="Send">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="uk-container uk-container-center">
+                <div class="uk-grid">
+                    <div class="uk-width-1-1">
+                        <p>Copyright © 2016 Amber House. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: footer -->
+
+    <!-- build:js js/vendor.min.js -->
+    <!-- bower:js -->
+    <script src="../src/bower/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <script src="../src/js/uikit.min.js"></script>
+    <script src="../src/js/core/cover.min.js"></script>
+    <script src="../src/js/core/dropdown.min.js"></script>
+    <script src="../src/js/core/modal.min.js"></script>
+    <script src="../src/js/components/parallax.min.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js js/main.min.js -->
+    <script src="js/app.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
