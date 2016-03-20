@@ -275,3 +275,7 @@ h3 {
     margin: 10px auto; } }
 .top-menu {
   background-color: rgba(0, 0, 0, 0.45); }
+
+body > div:not(:first-of-type) {
+  margin: 125px auto;
+}
