@@ -20,6 +20,7 @@
 <body>
     <!-- BEGIN: header -->
     <div class="header">
+        <!-- begin: top-menu -->
         <div class="top-menu">
             <div class="uk-container uk-container-center">
                 <div class="uk-grid">
@@ -29,7 +30,30 @@
                                 <li><a class="uk-navbar-toggle" data-uk-offcanvas="{target:'#navigation'}"></a></li>
                             </ul>
 
+                            <ul class="uk-navbar-nav uk-navbar-flip uk-visible-small">
+                                <li class="uk-float-right">
+                                    <div class="uk-button-dropdown uk-align-right" data-uk-dropdown>
+                                        <div class="uk-button shopping-cart">
+                                            <i class="uk-icon-shopping-cart"></i>
+                                        </div>
+
+                                        <div class="uk-dropdown uk-dropdown-width-2">
+                                            <div class="uk-grid uk-dropdown-grid">
+                                                <div class="uk-width-1-2">
+                                                    <div class="uk-panel">...</div>
+                                                </div>
+
+                                                <div class="uk-width-1-2">
+                                                    <div class="uk-panel">...</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
                             <ul class="uk-navbar-nav uk-hidden-small">
+                                <li class="separator-vertical"></li>
                                 <li class="uk-parent" data-uk-dropdown>
                                     <a href="">Language <i class="uk-icon-caret-down"></i></a>
 
@@ -57,20 +81,33 @@
                             </ul>
 
                             <ul class="uk-navbar-nav uk-navbar-flip uk-hidden-small">
-                                <li><a href="#log-in" data-uk-modal>Account <i class="uk-icon-cog"></i></a></li>
+                                <li><a href="#account" data-uk-modal>Account <i class="uk-icon-cog"></i></a></li>
+                                <li class="separator-vertical"></li>
                             </ul>
                         </nav>
 
                         <div id="navigation" class="uk-offcanvas">
                             <div class="uk-offcanvas-bar">
                                 <ul class="uk-nav uk-nav-parent-icon" data-uk-nav>
+                                    <li class="uk-nav-header">Search</li>
+                                    <li>
+                                        <div class="form-short">
+                                            <form action="" class="uk-form form-search">
+                                                <fieldset data-uk-margin>
+                                                    <input type="search" placeholder="Search"
+                                                           class="uk-width-1-1 uk-form-large input-search">
+                                                    <input type="submit" value="" class="uk-button button-search">
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </li>
                                     <li class="uk-nav-header">Pages</li>
-                                    <li><a href="">Home</a></li>
+                                    <li><a href="/">Home</a></li>
                                     <li><a href="">Gallery</a></li>
                                     <li><a href="">About</a></li>
                                     <li><a href="">Delivery</a></li>
                                     <li><a href="">Contacts</a></li>
-                                    <li><a href="#log-in" data-uk-modal>Log in</a></li>
+                                    <li><a href="#account" data-uk-modal>Account</a></li>
 
                                     <li class="uk-nav-divider"></li>
 
@@ -95,54 +132,97 @@
                                 </ul>
                             </div>
                         </div>
+
+                        <div id="account" class="uk-modal">
+                            <div class="uk-modal-dialog">
+                                <button type="button" class="uk-modal-close uk-close"></button>
+                                <div class="uk-modal-header">Account</div>
+                                ...
+                                <div class="uk-modal-footer uk-text-right">
+                                    <button type="button" class="uk-button uk-modal-close">Cancel</button>
+                                    <button type="button" class="uk-button uk-button-primary">Save</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- end: top-menu -->
 
+        <!-- begin: top-bar -->
         <div class="top-bar">
             <div class="uk-container uk-container-center uk-vertical-align">
                 <div class="uk-grid">
-                    <div class="uk-width-3-10 uk-vertical-align-middle">
-                        <img src="images/sm-logo.png" alt="">
+                    <div class="uk-width-small-1-1 uk-width-medium-3-10 uk-vertical-align-middle">
+                        <a href="/" class="main-logo"><img src="images/sm-logo.png" alt=""></a>
                     </div>
 
-                    <div class="uk-width-4-10 uk-vertical-align-middle">
-                        <div class="short-form">
-                            <form action="" class="uk-form">
+                    <div class="uk-hidden-small uk-width-4-10 uk-vertical-align-middle">
+                        <div class="form-short">
+                            <form action="" class="uk-form form-search">
                                 <fieldset data-uk-margin>
-                                    <input type="text" placeholder="Name" class="uk-form-large">
-
-                                    <input type="submit" value="Search">
+                                    <input type="search" placeholder="Search"
+                                           class="uk-width-1-1 uk-form-large input-search">
+                                    <input type="submit" value="" class="uk-button button-search">
                                 </fieldset>
                             </form>
                         </div>
                     </div>
 
-                    <div class="uk-width-3-10 uk-vertical-align-middle">
-                        <p class="uk-align-right"><strong>0</strong> item - <strong>$0.00</strong> <img src="images/shopping-cart.png" alt=""></p>
+                    <div class="uk-hidden-small uk-width-3-10 uk-vertical-align-middle">
+                        <div class="uk-button-dropdown uk-align-right" data-uk-dropdown>
+                            <div class="uk-button shopping-cart">
+                                <strong>0</strong> item - <strong>$0.00</strong> <img src="images/shopping-cart.png"
+                                                                                      alt="">
+                            </div>
+
+                            <div class="uk-dropdown uk-dropdown-width-2">
+                                <div class="uk-grid uk-dropdown-grid">
+                                    <div class="uk-width-1-2">
+                                        <div class="uk-panel">...</div>
+                                    </div>
+
+                                    <div class="uk-width-1-2">
+                                        <div class="uk-panel">...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- end: top-bar -->
 
-        <div class="top-detail-menu">
+        <!-- begin: top-detail-menu -->
+        <div class="uk-hidden-small top-detail-menu">
             <div class="uk-container uk-container-center">
                 <div class="uk-grid">
                     <div class="uk-width-1-1">
                         <nav class="uk-navbar">
                             <ul class="uk-navbar-nav">
-                                <li><a href="">Home</a></li>
+                                <li><a href="/">Home</a></li>
                                 <li class="active"><a href="">Gallery</a></li>
                                 <li><a href="">About</a></li>
                                 <li><a href="">Delivery</a></li>
                                 <li><a href="">Contacts</a></li>
                             </ul>
+
+                            <div class="breadcrumbs uk-visible-large">
+                                <ul class="uk-breadcrumb">
+                                    <li>You’re here:</li>
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">Gallery</a></li>
+                                    <li><a href="">Accessories</a></li>
+                                </ul>
+                            </div>
                         </nav>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- end: top-detail-menu -->
     </div>
     <!-- END: header -->
 
@@ -150,97 +230,230 @@
     <div class="content">
         <div class="uk-container uk-container-center">
             <div class="uk-grid">
-                <div class="uk-width-3-10">
+                <!-- begin: sidebar -->
+                <div class="uk-width-small-1-1 uk-width-medium-3-10">
                     <div class="sidebar">
                         <form action="" class="uk-form">
-                            <div class="uk-panel">
-                                <h3>Category</h3>
+                            <div class="uk-panel checkbox-list">
+                                <h3 class="headline-underlined"><span>Category</span></h3>
 
                                 <ul class="uk-list">
-                                    <li><label><input type="checkbox">T- Shirts</label></li>
-                                    <li class="active"><label><input type="checkbox" checked>Jeans</label></li>
+                                    <li><label><input type="checkbox"><span></span>T- Shirts</label></li>
+                                    <li class="active"><label><input type="checkbox"><span></span>Jeans</label></li>
 
-                                    <li class="uk-list-parent"><label><input type="checkbox">Short</label></li>
+                                    <li class="uk-list-parent"><label><input type="checkbox"><span></span>Short</label>
+                                    </li>
                                     <ul class="uk-list uk-list-sub">
-                                        <li><label><input type="checkbox">Short’s subitem</label></li>
-                                        <li><label><input type="checkbox">Second item</label></li>
+                                        <li><label><input type="checkbox"><span></span>Short’s subitem</label></li>
+                                        <li><label><input type="checkbox"><span></span>Second item</label></li>
                                     </ul>
 
-                                    <li><label><input type="checkbox">Accessories</label></li>
-                                    <li><label><input type="checkbox">Shoes</label></li>
-                                    <li><label><input type="checkbox">Jackets</label></li>
-                                    <li><label><input type="checkbox">Casual</label></li>
-                                    <li><label><input type="checkbox">Pants</label></li>
+                                    <li><label><input type="checkbox" checked="checked"><span></span>Accessories</label>
+                                    </li>
+                                    <li><label><input type="checkbox"><span></span>Shoes</label></li>
+                                    <li><label><input type="checkbox"><span></span>Jackets</label></li>
+                                    <li><label><input type="checkbox"><span></span>Casual</label></li>
+                                    <li><label><input type="checkbox"><span></span>Pants</label></li>
                                 </ul>
                             </div>
+
+                            <div class="uk-panel checkbox-list">
+                                <h3 class="headline-underlined"><span>Size</span></h3>
+
+                                <ul class="uk-list">
+                                    <li><label><input type="checkbox"><span></span>15x20</label></li>
+                                    <li><label><input type="checkbox"><span></span>20x30</label></li>
+                                    <li><label><input type="checkbox"><span></span>30x40</label></li>
+                                    <li><label><input type="checkbox"><span></span>40x50</label></li>
+                                    <li><label><input type="checkbox"><span></span>50x60</label></li>
+                                </ul>
+                            </div>
+
+                            <div class="uk-panel checkbox-list">
+                                <h3 class="headline-underlined"><span>Material</span></h3>
+
+                                <ul class="uk-list">
+                                    <li><label><input type="checkbox"><span></span>Cloth</label></li>
+                                    <li><label><input type="checkbox"><span></span>Canvas</label></li>
+                                </ul>
+                            </div>
+
+                            <div class="uk-panel">
+                                <h3 class="headline-underlined"><span>Prise</span></h3>
+
+                                <input type="range" id="range" name="range" class="uk-width-1-1" value="85" min="85"
+                                       max="229">
+                                <label for="range">Start from <span>85</span> to <span>229</span>. Current:
+                                    <span>85</span></label>
+                            </div>
+
+                            <input type="submit" class="uk-button button-border" value="Search">
                         </form>
                     </div>
                 </div>
+                <!-- end: sidebar -->
 
-                <div class="uk-width-7-10">
+                <!-- begin: record -->
+                <div class="uk-width-small-1-1 uk-width-medium-7-10">
                     <div class="record">
-                        <h3>Category</h3>
+                        <h3 class="headline-underlined"><span>Accessories</span></h3>
 
-                        <img src="images/record.png" alt="">
+                        <div class="uk-grid uk-grid-medium">
+                            <div class="uk-width-small-1-1 uk-width-large-6-10 record-preview">
+                                <a href="images/record.png" data-uk-lightbox="{group:'record'}"><img
+                                        src="images/record.png" alt=""></a>
+                            </div>
 
-                        <h1>The standard Lorem Ipsum</h1>
-                        <p>Sed vel consectetur purus, sit amet bibendum mi. Fusce porttitor ex sed lectus aliquet consectetur. Ut bibendum eu tortor a malesuada. In iaculis metus vel sollicitudin facilisis. Maecenas scelerisque.</p>
+                            <div class="uk-width-small-1-1 uk-width-large-4-10">
+                                <h1 class="record-headline">The standard Lorem Ipsum</h1>
+                                <p>Sed vel consectetur purus, sit amet bibendum mi. Fusce porttitor ex sed lectus
+                                    aliquet consectetur. Ut bibendum eu tortor a malesuada. In iaculis metus vel
+                                    sollicitudin facilisis. Maecenas scelerisque.</p>
 
-                        <p><span class="muted">$157.00</span> <span class="big-price">$147.00</span></p>
+                                <div class="uk-vertical-align">
+                                    <span class="uk-vertical-align-middle muted">$157.00</span>
+                                    <span class="uk-vertical-align-middle price-big">$147.00</span>
+                                </div>
 
-                        <div class="detail-form">
-                            <form action="" class="uk-form">
-                                <label for="type">Frame:</label>
-                                <select name="type" id="type">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
+                                <div class="form-detail options">
+                                    <form action="" class="uk-form">
+                                        <div class="form-item">
+                                            <label for="type">Frame:</label>
+                                            <select name="type" id="type">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
 
-                                <label for="size">Size:</label>
-                                <select name="size" id="size">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
+                                        <div class="form-item">
+                                            <label for="size">Size:</label>
+                                            <select name="size" id="size">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
 
-                                <label for="quantity">Quantity:</label>
-                                <input type="number" id="quantity">
+                                        <div class="form-item">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1" max="10">
+                                        </div>
 
-                                <input type="submit" value="+ Add to shopping cart">
-                            </form>
+                                        <input type="submit" class="uk-button button-border"
+                                               value="+ Add to shopping cart">
+                                    </form>
+                                </div>
+                            </div>
                         </div>
 
-                        <ul class="uk-tab" data-uk-tab="{connect:'#description'}">
-                            <li class="uk-active"><a href="">Detailed</a></li>
-                            <li><a href="">Reviews</a></li>
-                        </ul>
+                        <div class="description">
+                            <ul class="uk-tab" data-uk-tab="{connect:'#description-content'}">
+                                <li class="uk-active"><a href="">Detailed</a></li>
+                                <li><a href="">Reviews</a></li>
+                            </ul>
 
-                        <ul id="description" class="uk-switcher uk-margin">
-                            <li>1</li>
-                            <li>2</li>
-                        </ul>
+                            <ul id="description-content" class="uk-switcher uk-margin description-content">
+                                <li><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum.</p></li>
+                                <li><p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words which
+                                    don't look even slightly believable. If you are going to use a passage of Lorem
+                                    Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of
+                                    text. All the Lorem Ipsum generators on the Internet tend to repeat predefined
+                                    chunks as necessary, making this the first true generator on the Internet. It uses a
+                                    dictionary of over 200 Latin words, combined with a handful of model sentence
+                                    structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem
+                                    Ipsum is therefore always free from repetition, injected humour, or
+                                    non-characteristic words etc.</p></li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="related-items">
-                        <div class="uk-slidenav-position" data-uk-slider>
+                        <h3 class="headline-aux">Related items</h3>
 
-                            <div class="uk-slider-container">
-                                <ul class="uk-slider uk-grid-width-medium-1-3">
-                                    <li>1</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5</li>
+                        <div class="uk-slidenav-position" data-uk-slider="{infinite: false}">
+                            <div class="uk-slider-container record-items">
+                                <ul class="uk-slider uk-grid-small uk-grid-width-medium-1-3">
+                                    <li>
+                                        <img src="images/record.png" alt="">
+                                        <h5 class="record-headline-mini">
+                                            <a href="" class="link-hidden">The standard Lorem Ipsum</a>
+                                        </h5>
+
+                                        <div class="price-slider">
+                                            <span class="muted">$157.00</span>
+                                            <span class="price-normal">$147.00</span>
+                                        </div>
+
+                                        <button class="uk-button button-min"><i class="uk-icon-shopping-cart"></i> + Add
+                                            to shopping cart
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <img src="images/record.png" alt="">
+                                        <h5 class="record-headline-mini">
+                                            <a href="" class="link-hidden">The standard Lorem Ipsum</a>
+                                        </h5>
+
+                                        <div class="price-slider">
+                                            <span class="muted">$157.00</span>
+                                            <span class="price-normal">$147.00</span>
+                                        </div>
+
+                                        <button class="uk-button button-min"><i class="uk-icon-shopping-cart"></i> + Add
+                                            to shopping cart
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <img src="images/record.png" alt="">
+                                        <h5 class="record-headline-mini">
+                                            <a href="" class="link-hidden">The standard Lorem Ipsum</a>
+                                        </h5>
+
+                                        <div class="price-slider">
+                                            <span class="muted">$157.00</span>
+                                            <span class="price-normal">$147.00</span>
+                                        </div>
+
+                                        <button class="uk-button button-min"><i class="uk-icon-shopping-cart"></i> + Add
+                                            to shopping cart
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <img src="images/record.png" alt="">
+                                        <h5 class="record-headline-mini">
+                                            <a href="" class="link-hidden">The standard Lorem Ipsum</a>
+                                        </h5>
+
+                                        <div class="price-slider">
+                                            <span class="muted">$157.00</span>
+                                            <span class="price-normal">$147.00</span>
+                                        </div>
+
+                                        <button class="uk-button button-min"><i class="uk-icon-shopping-cart"></i> + Add
+                                            to shopping cart
+                                        </button>
+                                    </li>
                                 </ul>
                             </div>
 
                             <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slider-item="previous"></a>
                             <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slider-item="next"></a>
-
                         </div>
                     </div>
                 </div>
+                <!-- end: record -->
             </div>
         </div>
     </div>
@@ -363,6 +576,7 @@
     <script src="../src/js/core/cover.min.js"></script>
     <script src="../src/js/core/dropdown.min.js"></script>
     <script src="../src/js/core/modal.min.js"></script>
+    <script src="../src/js/components/lightbox.min.js"></script>
     <script src="../src/js/components/parallax.min.js"></script>
     <script src="../src/js/components/slider.min.js"></script>
     <!-- endbuild -->

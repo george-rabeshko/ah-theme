@@ -4,11 +4,30 @@
         line-height: 65px;
         margin-bottom: 0 !important;
     }
+
+    .main-logo {
+        display: block;
+        text-align: center;
+    }
+
+    .content {
+        margin-top: 15px;
+    }
 }
 
 @media (min-width: 768px) {
     .footer h3 {
         margin-top: 0 !important;
         margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1219px) {
+    .form-detail .form-item *:not(label) {
+        width: 150px;
+    }
+
+    .options .button-border {
+        padding: 10px 30px !important;
     }
 }

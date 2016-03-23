@@ -13,19 +13,28 @@
 
 .uk-form input, .uk-form textarea {
     background-color: transparent !important;
-    padding-left: 12px !important;
 }
 
-.uk-form input[type="submit"] {
+.uk-form input[type="submit"]:not(.uk-button) {
     @extend .animation;
     background-color: #b67138 !important;
     border: none;
     color: #fff;
     font-family: "OpenSans-Bold", sans-serif;
-    padding: 8px 30px !important;
+    padding: 8px 30px;
     text-align: center;
 
     &:hover {
         background-color: #9E4B06 !important;
+    }
+}
+
+.uk-tab > li:not(.uk-active) > a {
+    color: #bababa;
+
+    &:hover {
+        background-color: #fff;
+        border-color: #DDDDDD;
+        color: #bababa;
     }
 }

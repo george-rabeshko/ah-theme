@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Home page</title>
+
+    <!-- build:css css/vendor.min.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../src/bower/normalize-css/normalize.css"/>
+    <!-- endbower -->
+    <link rel="stylesheet" href="../src/css/uikit.almost-flat.min.css">
+    <link rel="stylesheet" href="../src/css/components/slider.min.css">
+    <!-- endbuild -->
+
+    <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" href="css/catalog.css">
+    <!-- endbuild -->
+</head>
+<body>
+<!-- BEGIN: header -->
+<div class="header">
+    <!-- begin: top-menu -->
+    <div class="top-menu">
+        <div class="uk-container uk-container-center">
+            <div class="uk-grid">
+                <div class="uk-width-1-1">
+                    <nav class="uk-navbar">
+                        <ul class="uk-navbar-nav uk-visible-small">
+                            <li><a class="uk-navbar-toggle" data-uk-offcanvas="{target:'#navigation'}"></a></li>
+                        </ul>
+
+                        <ul class="uk-navbar-nav uk-navbar-flip uk-visible-small">
+                            <li class="uk-float-right">
+                                <div class="uk-button-dropdown uk-align-right" data-uk-dropdown>
+                                    <div class="uk-button shopping-cart">
+                                        <i class="uk-icon-shopping-cart"></i>
+                                    </div>
+
+                                    <div class="uk-dropdown uk-dropdown-width-2">
+                                        <div class="uk-grid uk-dropdown-grid">
+                                            <div class="uk-width-1-2">
+                                                <div class="uk-panel">...</div>
+                                            </div>
+
+                                            <div class="uk-width-1-2">
+                                                <div class="uk-panel">...</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="uk-navbar-nav uk-hidden-small">
+                            <li class="separator-vertical"></li>
+                            <li class="uk-parent" data-uk-dropdown>
+                                <a href="">Language <i class="uk-icon-caret-down"></i></a>
+
+                                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-small">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href=""><i class="uk-icon-flag"></i> - English</a></li>
+                                        <li><a href=""><i class="uk-icon-flag"></i> - Ukrainian</a></li>
+                                        <li><a href=""><i class="uk-icon-flag"></i> - Russian</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="uk-parent" data-uk-dropdown>
+                                <a href="">Currency <i class="uk-icon-caret-down"></i></a>
+
+                                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-small">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href=""><i class="uk-icon-usd"></i> - USD</a></li>
+                                        <li><a href=""><i class="uk-icon-eur"></i> - EUR</a></li>
+                                        <li><a href=""><i class="uk-icon-yen"></i> - UAH</a></li>
+                                        <li><a href=""><i class="uk-icon-rub"></i> - RUB</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="uk-navbar-nav uk-navbar-flip uk-hidden-small">
+                            <li><a href="#account" data-uk-modal>Account <i class="uk-icon-cog"></i></a></li>
+                            <li class="separator-vertical"></li>
+                        </ul>
+                    </nav>
+
+                    <div id="navigation" class="uk-offcanvas">
+                        <div class="uk-offcanvas-bar">
+                            <ul class="uk-nav uk-nav-parent-icon" data-uk-nav>
+                                <li class="uk-nav-header">Search</li>
+                                <li>
+                                    <div class="form-short">
+                                        <form action="" class="uk-form form-search">
+                                            <fieldset data-uk-margin>
+                                                <input type="search" placeholder="Search"
+                                                       class="uk-width-1-1 uk-form-large input-search">
+                                                <input type="submit" value="" class="uk-button button-search">
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </li>
+                                <li class="uk-nav-header">Pages</li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="">Gallery</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Delivery</a></li>
+                                <li><a href="">Contacts</a></li>
+                                <li><a href="#account" data-uk-modal>Account</a></li>
+
+                                <li class="uk-nav-divider"></li>
+
+                                <li class="uk-nav-header">Auxiliary</li>
+                                <li class="uk-parent">
+                                    <a href="#">Language</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="#">English</a></li>
+                                        <li><a href="#">Ukrainian</a></li>
+                                        <li><a href="#">Russian</a></li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent">
+                                    <a href="#">Currency</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="#">USD</a></li>
+                                        <li><a href="#">EUR</a></li>
+                                        <li><a href="#">UAH</a></li>
+                                        <li><a href="#">RUB</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="account" class="uk-modal">
+                        <div class="uk-modal-dialog">
+                            <button type="button" class="uk-modal-close uk-close"></button>
+                            <div class="uk-modal-header">Account</div>
+                            ...
+                            <div class="uk-modal-footer uk-text-right">
+                                <button type="button" class="uk-button uk-modal-close">Cancel</button>
+                                <button type="button" class="uk-button uk-button-primary">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end: top-menu -->
+
+    <!-- begin: top-bar -->
+    <div class="top-bar">
+        <div class="uk-container uk-container-center uk-vertical-align">
+            <div class="uk-grid">
+                <div class="uk-width-small-1-1 uk-width-medium-3-10 uk-vertical-align-middle">
+                    <a href="/" class="main-logo"><img src="images/sm-logo.png" alt=""></a>
+                </div>
+
+                <div class="uk-hidden-small uk-width-4-10 uk-vertical-align-middle">
+                    <div class="form-short">
+                        <form action="" class="uk-form form-search">
+                            <fieldset data-uk-margin>
+                                <input type="search" placeholder="Search"
+                                       class="uk-width-1-1 uk-form-large input-search">
+                                <input type="submit" value="" class="uk-button button-search">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="uk-hidden-small uk-width-3-10 uk-vertical-align-middle">
+                    <div class="uk-button-dropdown uk-align-right" data-uk-dropdown>
+                        <div class="uk-button shopping-cart">
+                            <strong>0</strong> item - <strong>$0.00</strong> <img src="images/shopping-cart.png" alt="">
+                        </div>
+
+                        <div class="uk-dropdown uk-dropdown-width-2">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-2">
+                                    <div class="uk-panel">...</div>
+                                </div>
+
+                                <div class="uk-width-1-2">
+                                    <div class="uk-panel">...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end: top-bar -->
+
+    <!-- begin: top-detail-menu -->
+    <div class="uk-hidden-small top-detail-menu">
+        <div class="uk-container uk-container-center">
+            <div class="uk-grid">
+                <div class="uk-width-1-1">
+                    <nav class="uk-navbar">
+                        <ul class="uk-navbar-nav">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="">Gallery</a></li>
+                            <li><a href="">About</a></li>
+                            <li class="active"><a href="">Delivery</a></li>
+                            <li><a href="">Contacts</a></li>
+                        </ul>
+
+                        <div class="breadcrumbs uk-visible-large">
+                            <ul class="uk-breadcrumb">
+                                <li>You’re here:</li>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Delivery</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end: top-detail-menu -->
+</div>
+<!-- END: header -->
+
+<!-- BEGIN: content -->
+<div class="content">
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid">
+            <!-- begin: sidebar -->
+            <div class="uk-width-small-1-1 uk-width-medium-3-10">
+                <div class="sidebar">
+                    <div class="offers">
+                        <h3 class="headline-underlined"><span>Special offers</span></h3>
+
+                        <div class="offer uk-panel">
+                            <img src="images/record.png" alt="">
+                            <h5 class="record-headline-mini">
+                                <a href="" class="link-hidden">The standard Lorem Ipsum</a>
+                            </h5>
+
+                            <div class="price-slider">
+                                <span class="muted">$157.00</span>
+                                <span class="price-normal">$147.00</span>
+                            </div>
+
+                            <button class="uk-button button-min">
+                                <i class="uk-icon-shopping-cart"></i> + Add to shopping cart
+                            </button>
+                        </div>
+
+                        <div class="offer uk-panel">
+                            <img src="images/record.png" alt="">
+                            <h5 class="record-headline-mini">
+                                <a href="" class="link-hidden">The standard Lorem Ipsum</a>
+                            </h5>
+
+                            <div class="price-slider">
+                                <span class="muted">$157.00</span>
+                                <span class="price-normal">$147.00</span>
+                            </div>
+
+                            <button class="uk-button button-min">
+                                <i class="uk-icon-shopping-cart"></i> + Add to shopping cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end: sidebar -->
+
+            <!-- begin: record -->
+            <div class="uk-width-small-1-1 uk-width-medium-7-10">
+                <div class="records">
+                    <h3 class="headline-underlined"><span>Delivery</span></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                </div>
+            </div>
+            <!-- end: record -->
+        </div>
+    </div>
+</div>
+<!-- END: content -->
+
+<!-- BEGIN: footer -->
+<div class="footer">
+    <div class="uk-container uk-container-center footer-detail">
+        <div class="uk-grid">
+            <div class="uk-width-small-1-1 uk-width-medium-1-3">
+                <img src="images/sm-logo.png" class="small-logo" alt="">
+
+                <div class="small-margin-bottom-group">
+                    <p><strong>Email</strong> : hello123@gmail.com</p>
+                    <p><strong>Phone</strong> : 0123 456 789</p>
+                    <p><strong>Add</strong> : 2809 Lincoln st, Califonia, USA</p>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat.</p>
+
+                <div class="social">
+                    <a href="" class="uk-button"><i class="uk-icon-facebook"></i></a>
+                    <a href="" class="uk-button"><i class="uk-icon-twitter"></i></a>
+                    <a href="" class="uk-button"><i class="uk-icon-vk"></i></a>
+                    <a href="" class="uk-button"><i class="uk-icon-google"></i></a>
+                </div>
+
+                <div class="short-form">
+                    <h5>Newsletter:</h5>
+                    <form action="" class="uk-form">
+                        <fieldset data-uk-margin>
+                            <input type="text" placeholder="Email Adress" class="uk-form-large uk-form-width-medium">
+                            <input type="submit" value="Send">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+            <div class="uk-width-small-1-1 uk-width-medium-1-3">
+                <hr class="uk-visible-small">
+                <h3>Popular items</h3>
+
+                <div class="uk-grid">
+                    <div class="uk-width-1-3">
+                        1
+                    </div>
+
+                    <div class="uk-width-1-3">
+                        2
+                    </div>
+
+                    <div class="uk-width-1-3">
+                        3
+                    </div><!-- /f-row -->
+
+                    <div class="uk-width-1-3">
+                        1
+                    </div>
+
+                    <div class="uk-width-1-3">
+                        2
+                    </div>
+
+                    <div class="uk-width-1-3">
+                        3
+                    </div><!-- /s-row -->
+
+                    <div class="uk-width-1-3">
+                        1
+                    </div>
+
+                    <div class="uk-width-1-3">
+                        2
+                    </div>
+
+                    <div class="uk-width-1-3">
+                        3
+                    </div><!-- /t-row -->
+                </div>
+            </div>
+
+            <div class="uk-width-small-1-1 uk-width-medium-1-3">
+                <hr class="uk-visible-small">
+                <h3>Quick contact us</h3>
+
+                <div class="detail-form">
+                    <form action="" class="uk-form">
+                        <fieldset data-uk-margin>
+                            <input type="text" placeholder="Name" class="uk-form-large uk-width-1-1">
+                            <input type="email" placeholder="Email" class="uk-form-large uk-width-1-1">
+                            <input type="text" placeholder="Phone Number" class="uk-form-large uk-width-1-1">
+
+                            <textarea name="message" cols="30" rows="5" placeholder="Message"
+                                      class="uk-form-large  uk-width-1-1"></textarea>
+
+                            <input type="submit" value="Send">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="uk-container uk-container-center">
+            <div class="uk-grid">
+                <div class="uk-width-1-1">
+                    <p>Copyright © 2016 Amber House. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END: footer -->
+
+<!-- build:js js/vendor.min.js -->
+<!-- bower:js -->
+<script src="../src/bower/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<script src="../src/js/uikit.min.js"></script>
+<script src="../src/js/core/cover.min.js"></script>
+<script src="../src/js/core/dropdown.min.js"></script>
+<script src="../src/js/core/modal.min.js"></script>
+<script src="../src/js/components/lightbox.min.js"></script>
+<script src="../src/js/components/parallax.min.js"></script>
+<script src="../src/js/components/slider.min.js"></script>
+<!-- endbuild -->
+
+<!-- build:js js/main.min.js -->
+<script src="js/app.js"></script>
+<!-- endbuild -->
+</body>
+</html>

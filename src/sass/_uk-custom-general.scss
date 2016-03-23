@@ -39,3 +39,37 @@
         }
     }
 }
+
+.uk-close-alt {
+    border-radius: 50% !important;
+}
+
+.uk-breadcrumb > li:nth-child(2):before {
+    content: "";
+}
+
+.uk-pagination {
+    .uk-active > a {
+        background-color: #f37812;
+        color: #fff;
+    }
+
+    li > a {
+        background-color: #fff;
+        border: 2px solid #f37812;
+        color: #f37812;
+        font-weight: bold;
+        margin: 0 2px;
+        padding: 5px 7px;
+
+        &:hover {
+            background-color: #f99a4c;
+            border-color: #f99a4c;
+            color: #fff;
+        }
+    }
+}
+
+.sidebar .uk-panel {
+    margin-bottom: 30px;
+}
